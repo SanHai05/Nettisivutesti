@@ -1,9 +1,13 @@
-body{
-    background-color:#f8f5f1;
-    padding: 10px 20%; 
+body {
+    background-color: #f8f5f1;
     margin: 0;
+    /* Tämä säätää välin automaattisesti: */
+    /* Puhelimella väli on vähintään 15px, tietokoneella max 20% */
+    padding: 20px min(20%, 250px); 
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
 
 h1{
     font-family: Arial,sans-serif;
@@ -183,6 +187,7 @@ a:hover {
 
 a:active {
     color:#1e1813;}
+
 
 
 
