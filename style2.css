@@ -1,6 +1,6 @@
 body{ 
     background-color:#f8f5f1; 
-    padding: 10px 20%; 
+    padding: 10px 15%; 
     margin: 0; 
     box-sizing: 
     border-box; 
@@ -185,6 +185,7 @@ a:hover {
 
 a:active {
     color:#1e1813;}
+
 
 
 
