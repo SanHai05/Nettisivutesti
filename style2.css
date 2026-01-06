@@ -5,6 +5,12 @@ body{
     box-sizing: 
     border-box; 
 }
+@media (max-width: 600px) {
+    body {
+        /* Tässä muutat prosentin pienemmäksi puhelimelle */
+        padding: 10px 5%; 
+    }
+}
 
 
 h1{
@@ -185,6 +191,7 @@ a:hover {
 
 a:active {
     color:#1e1813;}
+
 
 
 
