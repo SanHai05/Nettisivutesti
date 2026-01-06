@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8"> <!-- Mahdollistaa ääkköset -->
-<title>Minun nettisivu</title>
-<link rel="stylesheet" href="style.css"> <!-- Yhdistää CSS -->
+<meta charset="UTF-8">
+<title>Laskin</title>
+<link rel="stylesheet" href="style2.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
-  <h1>Tervetuloa sivulleni</h1>
-  <p id="teksti"> Tämä on ensimmäinen nettisivuni.</p>
-  <img src="onedirection1.jpg" width="300" height="100">
-  
-  <br><br>
+<h1>MATEMAATTISIA TYÖKALUJA</h1>
 
-  <!-- Luo napin ja suorittaa funktion -->
-  <button onclick="muutaTeksti()">Klikkaa minua</button> 
+<h2>LASKIN</h2>
 
-<script src="script.js"></script> <!-- Liittää JavaScriptin -->
+<div class="container">
+    <div class="tekstilohko">
+        <p>Vieressä on tavalline laskin, jolla voi laskea yksinkertaisia
+           plus, miinus, kerto ja jakolaskuja.
+           <br><br> Laskin toimii normaalisti: 
+           <br><br> C tyhjentää
+           <br> = näyttää tuloksen
+           <br> + -pluslasku
+           <br> - -miinuslasku
+           <br> * kertolasku
+           <br> / jakolasku 
+           <br> <br> <a href="https://www.wolframalpha.com/calculators/equation-solver-calculator" target="_blank" title="WolframAlpha jolla voi laskea yhtälöitä">Parempi laskin</a> </p>
+    </div>
 
+<div class="calculator">
+  <input type="text" id="display" disabled>
+  <div class="buttons">
+       <button>7</button>
+       <button>8</button>
+       <button>9</button>
+       <button>/</button>
+
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>*</button>
+
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>-</button>
+
+       <button>0</button>
+       <button>C</button>
+       <button>=</button>
+       <button>+</button>
+  </div>
+ </div>
+</div>
+
+<h2>TOISEN ASTEEN YHTÄLÖ</h3>
+
+<div class="container column">
+     <div class="tekstilohko">
+        <p> Toisen asteen yhtälö on muotoa  \(ax^2 + bx + c = 0\)
+            <br><br> Mikä ratkaistaan kaavalla \( x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \).
+            <br><br> Syötä alle arvot ja saat ratkaisun.
+                      <a href="https://fi.wikipedia.org/wiki/Toisen_asteen_yht%C3%A4l%C3%B6" target="_blank" title="Wikipedia:Toisen asteen yhtälö">Lisätietoja</a> </p>
+    </div>
+<div class="toisenaste">
+
+    <label>a <input type="number" id="a" placeholder="0"></label>
+    <label>b <input type="number" id="b" placeholder="0"></label>
+    <label>c <input type="number" id="c" placeholder="0"></label>
+
+       <br><br>
+
+       <button onclick="tyhjenna()">X</button>
+       <button onclick="ratkaise()">Laske</button>
+
+       <div id="tulos">Tulos</div>
+  </div>
+</div>
+
+
+
+<script src="script2.js"></script>
 </body>
 </html>
