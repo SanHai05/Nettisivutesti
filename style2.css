@@ -5,12 +5,6 @@ body{
     box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
-    body {
-        padding: 10px 20%; 
-    }
-}
-
 h1{
     font-family: Arial,sans-serif;
     font-size: 37px;
@@ -189,6 +183,7 @@ a:hover {
 
 a:active {
     color:#1e1813;}
+
 
 
 
